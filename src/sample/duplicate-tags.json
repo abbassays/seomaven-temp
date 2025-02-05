@@ -1,0 +1,81 @@
+{
+  "version": "0.1.20241227",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "2.2275 sec.",
+  "cost": 0,
+  "tasks_count": 2,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "02052101-4461-0216-0000-35ffb9de1f91",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "1.0833 sec.",
+      "cost": 0,
+      "result_count": 1,
+      "path": ["v3", "on_page", "duplicate_tags"],
+      "data": {
+        "api": "on_page",
+        "function": "duplicate_tags",
+        "type": "duplicate_title",
+        "target": "https://venturelabholdings.com/",
+        "store_raw_html": false,
+        "load_resources": true,
+        "enable_javascript": true,
+        "enable_browser_rendering": true,
+        "calculate_keyword_density": true,
+        "max_crawl_pages": 10
+      },
+      "result": [
+        {
+          "crawl_progress": "finished",
+          "crawl_status": {
+            "max_crawl_pages": 10,
+            "pages_in_queue": 0,
+            "pages_crawled": 0
+          },
+          "total_pages_count": 0,
+          "pages_count": 0,
+          "items_count": 0,
+          "items": null
+        }
+      ]
+    },
+    {
+      "id": "02052101-4461-0216-0000-35ffb9de1f91",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "1.1051 sec.",
+      "cost": 0,
+      "result_count": 1,
+      "path": ["v3", "on_page", "duplicate_tags"],
+      "data": {
+        "api": "on_page",
+        "function": "duplicate_tags",
+        "type": "duplicate_description",
+        "target": "https://venturelabholdings.com/",
+        "store_raw_html": false,
+        "load_resources": true,
+        "enable_javascript": true,
+        "enable_browser_rendering": true,
+        "calculate_keyword_density": true,
+        "max_crawl_pages": 10
+      },
+      "result": [
+        {
+          "crawl_progress": "finished",
+          "crawl_status": {
+            "max_crawl_pages": 10,
+            "pages_in_queue": 0,
+            "pages_crawled": 0
+          },
+          "total_pages_count": 0,
+          "pages_count": 0,
+          "items_count": 0,
+          "items": null
+        }
+      ]
+    }
+  ]
+}

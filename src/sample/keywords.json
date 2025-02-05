@@ -1,0 +1,546 @@
+{
+  "version": "0.1.20241227",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1344 sec.",
+  "cost": 0,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "02052101-4461-0216-0000-35ffb9de1f91",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0973 sec.",
+      "cost": 0,
+      "result_count": 1,
+      "path": ["v3", "on_page", "keyword_density"],
+      "data": {
+        "api": "on_page",
+        "function": "keyword_density",
+        "keyword_length": 2,
+        "target": "https://venturelabholdings.com/",
+        "store_raw_html": false,
+        "load_resources": true,
+        "enable_javascript": true,
+        "enable_browser_rendering": true,
+        "calculate_keyword_density": true,
+        "max_crawl_pages": 10
+      },
+      "result": [
+        {
+          "crawl_progress": "finished",
+          "crawl_status": {
+            "max_crawl_pages": 10,
+            "pages_in_queue": 0,
+            "pages_crawled": 0
+          },
+          "total_items_count": 228,
+          "items_count": 100,
+          "items": [
+            {
+              "keyword": "to top",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "of your",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "you grow",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "want to",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "in cash",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "they do",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "and be",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "about us",
+              "frequency": 5,
+              "density": 0.01592356687898089
+            },
+            {
+              "keyword": "as you",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "copy of",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "terms of",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "and get",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "on your",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "to build",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "found in",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "helps us",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "to grow",
+              "frequency": 4,
+              "density": 0.012738853503184714
+            },
+            {
+              "keyword": "in your",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "no other",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "map pack",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "us find",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "we have",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "and smbs",
+              "frequency": 4,
+              "density": 0.012738853503184714
+            },
+            {
+              "keyword": "them on",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "pay as",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "go to",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "as joe",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "we own",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "api call",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "you html",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "helps to",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "skip to",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "smbs who",
+              "frequency": 4,
+              "density": 0.012738853503184714
+            },
+            {
+              "keyword": "until it",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "ad spend",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "suite of",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "with us",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "at what",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "by using",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "get more",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "of every",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "power of",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "every ad",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "from any",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "of local",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "ll see",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "in three",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "who use",
+              "frequency": 4,
+              "density": 0.012738853503184714
+            },
+            {
+              "keyword": "every advertiser",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "to business",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "privacy policy",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "team members",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "other tool",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "your message",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "and retain",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "world-class at",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "grow together",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "negative reviews",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "that we've",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "strategy that",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "product market",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "on investment",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "from google",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "years which",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "optimize for",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "rob warner",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "to reveal",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "incoming leads",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "bringing in",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "proven ventures",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "term marketing",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "deliver your",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "experts to",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "google ads",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "fast bringing",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "explore proven",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "local search",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "in google's",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "and captcha",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "work with",
+              "frequency": 2,
+              "density": 0.006369426751592357
+            },
+            {
+              "keyword": "and experts",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "made them",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "tool gets",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "to participate",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "webpage with",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "additional ad",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "cash which",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "them world-class",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "proven ecosystem",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "digital agencies",
+              "frequency": 3,
+              "density": 0.009554140127388535
+            },
+            {
+              "keyword": "our creation",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "built for",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "social media",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "use technology",
+              "frequency": 4,
+              "density": 0.012738853503184714
+            },
+            {
+              "keyword": "search and",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "step behind",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "what they",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "and strategies",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "everything else",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            },
+            {
+              "keyword": "message until",
+              "frequency": 1,
+              "density": 0.0031847133757961785
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

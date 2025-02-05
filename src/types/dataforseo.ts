@@ -17,7 +17,7 @@ export interface OnPageParameters {
   enable_javascript?: boolean;
   enable_browser_rendering?: boolean;
   calculate_keyword_density?: boolean;
-  max_pages?: number;
+  max_crawl_pages?: number;
 }
 
 export interface OnPageTaskResponse {

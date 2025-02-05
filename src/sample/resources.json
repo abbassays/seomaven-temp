@@ -1,0 +1,4205 @@
+{
+  "crawl_progress": "finished",
+  "crawl_status": {
+    "max_crawl_pages": 5,
+    "pages_in_queue": 0,
+    "pages_crawled": 5
+  },
+  "total_items_count": 124,
+  "items_count": 100,
+  "items": [
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://static.adoric.com/adoric.v9.11.min.css",
+      "size": 182874,
+      "encoded_size": 15576,
+      "total_transfer_size": 15576,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 84, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 14400 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "gzip",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "cloudflare",
+      "last_modified": {
+        "header": "2024-03-12 18:41:56 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap&ver=6.7.1",
+      "size": 10537,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 61, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 86400 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "ESF",
+      "last_modified": null
+    },
+    {
+      "resource_type": "favicon",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/04/cropped-Fav-Icon-512_512-32x32.png",
+      "size": 523,
+      "encoded_size": 523,
+      "total_transfer_size": 523,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 120,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-10-10 15:24:57 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/elementor/css/post-9979.css?ver=1731418184",
+      "size": 25307,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 399,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": true,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": {
+        "errors": [
+          {
+            "line": 1,
+            "column": 1254,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          }
+        ],
+        "warnings": null
+      },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:44 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/elementor/css/post-9976.css?ver=1731418376",
+      "size": 5773,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 399,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": true,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": {
+        "errors": [
+          {
+            "line": 1,
+            "column": 1157,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          }
+        ],
+        "warnings": null
+      },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:32:56 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/elementor/css/post-9950.css?ver=1731418184",
+      "size": 14332,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 399,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": true,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": {
+        "errors": [
+          {
+            "line": 1,
+            "column": 795,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          },
+          {
+            "line": 7,
+            "column": 642,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          },
+          {
+            "line": 7,
+            "column": 738,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          }
+        ],
+        "warnings": null
+      },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:44 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/elementor/css/post-8215.css?ver=1731418376",
+      "size": 55408,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 399,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": true,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": {
+        "errors": [
+          {
+            "line": 1,
+            "column": 1255,
+            "message": "An expected identifier could not be found.",
+            "status_code": 2501
+          }
+        ],
+        "warnings": null
+      },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:32:56 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/elementor/css/post-8012.css?ver=1731418184",
+      "size": 14532,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 331,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": true,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": {
+        "errors": [
+          {
+            "line": 1,
+            "column": 9783,
+            "message": "No block can start at the current position.",
+            "status_code": 2501
+          }
+        ],
+        "warnings": null
+      },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:44 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.6.8",
+      "size": 42844,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 182,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:55:03 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/powerpack-elements/assets/css/min/frontend.min.css?ver=2.10.9",
+      "size": 334340,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 367,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-01-30 15:07:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/piotnet-addons-for-elementor-pro/assets/css/minify/extension.min.css?ver=7.1.30",
+      "size": 18339,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 158,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:39:46 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/leadconnector/public/css/lc-public.css?ver=1.7",
+      "size": 98,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 205,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-08-26 22:19:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-popup/assets/css/jet-popup-frontend.css?ver=2.0.3.1",
+      "size": 19642,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 146,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-07 18:01:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=3.4.1",
+      "size": 74613,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 280,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:53:27 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.3.0",
+      "size": 460543,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 452,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.3.0",
+      "size": 30299,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 451,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.3.0",
+      "size": 124837,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 411,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5",
+      "size": 16471,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 218,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.25.4",
+      "size": 26702,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 397,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3",
+      "size": 669,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 463,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3",
+      "size": 58071,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 462,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.25.4",
+      "size": 59344,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 384,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.31.0",
+      "size": 19862,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 214,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.4",
+      "size": 704,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 398,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.4",
+      "size": 254,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 158,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.25.4",
+      "size": 1409,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 398,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.4",
+      "size": 9929,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 332,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.4",
+      "size": 600,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 205,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.4",
+      "size": 60575,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 204,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.4",
+      "size": 10260,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 223,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=3.25.2",
+      "size": 14424,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 398,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.2",
+      "size": 6781,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 546,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.2",
+      "size": 974,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 366,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/affiliatable-plugin/css/styles.css?ver=6.7.1",
+      "size": 112865,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 331,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:34:52 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css?ver=6.7.1",
+      "size": 16470,
+      "encoded_size": 3942,
+      "total_transfer_size": 3942,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 52, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 30672000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "cloudflare",
+      "last_modified": {
+        "header": "2022-11-21 15:34:22 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdn.convertbox.com//static/css/bars-preview.css?id=2a62942015a9fa7734a9",
+      "size": 116391,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 23, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 31919000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "BunnyCDN-DE1-1079",
+      "last_modified": {
+        "header": "2025-01-09 23:14:31 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TS2CLPQ",
+      "size": 265057,
+      "encoded_size": 95198,
+      "total_transfer_size": 95198,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 78, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 900 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": true,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "Google Tag Manager",
+      "last_modified": {
+        "header": "2025-02-04 22:15:29 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://polyfill-fastly.io/v3/polyfill.min.js?flags=gated%7Calways&rum=true&features=Array.prototype.entries%2CArray.prototype.forEach%2CArray.prototype.includes%2CNodeList.prototype.forEach%2CObject.values%2CPromise%2CString.prototype.includes%2CSymbol%2CSymbol.iterator%2CObject.assign%2CArray.from%2CArray.isArray%2CArray.of%2CArray.prototype.findIndex%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.values%2CString.prototype.%40%40iterator%2CArray.prototype.%40%40iterator%2CArray.prototype.find%2CArray.prototype.filter%2CObject.defineProperty%2CObject.defineProperties%2CObject.entries%2CObject.keys",
+      "size": 49841,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 33, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 604800 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/javascript",
+      "accept_type": "any",
+      "server": null,
+      "last_modified": null
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+      "size": 21464,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 577,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-06-27 12:55:22 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "size": 87553,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 484,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-08-28 17:14:23 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "size": 13577,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 485,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-06-09 05:49:24 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/imagesloaded.min.js?ver=5.0.0",
+      "size": 5520,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 548,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-08-11 18:18:26 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6",
+      "size": 9141,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 575,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-02-15 16:53:15 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6",
+      "size": 4776,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 575,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-09-30 05:11:31 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.8",
+      "size": 21646,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 551,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:55:03 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/powerpack-elements/assets/lib/tooltipster/tooltipster.min.js?ver=2.10.9",
+      "size": 40063,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 645,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-01-30 15:07:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/powerpack-elements/assets/lib/smartmenu/jquery.smartmenus.min.js?ver=1.1.1",
+      "size": 24108,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 569,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-01-30 15:07:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/powerpack-elements/assets/js/min/frontend.min.js?ver=2.10.9",
+      "size": 36810,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 644,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-01-30 15:07:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/powerpack-elements/assets/js/min/frontend-advanced-menu.min.js?ver=2.10.9",
+      "size": 9129,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 548,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-01-30 15:07:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/piotnet-addons-for-elementor-pro/assets/js/minify/purify.min.js?ver=7.1.30",
+      "size": 20930,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 641,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:39:46 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/piotnet-addons-for-elementor-pro/assets/js/minify/extension.min.js?ver=7.1.30",
+      "size": 104089,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 501,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:39:46 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "stylesheet",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://fonts.bunny.net/css?family=Mali%7CCaveat%7CLato%7CLora%7CMontserrat%7COpen+Sans%7COswald%7CPlayfair+Display%7CQuicksand%7CRaleway%7CRoboto%7CUbuntu",
+      "size": 34077,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 10, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 2592000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "text/css",
+      "accept_type": "any",
+      "server": "BunnyCDN-DE1-1228",
+      "last_modified": {
+        "header": "2025-01-21 17:43:25 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/piotnet-addons-for-elementor-pro/assets/js/minify/custom-css.js?ver=7.1.30",
+      "size": 1555,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 643,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:39:46 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "DIGITALTRIGGERSHOMEPAGE_03-3",
+        "title": "",
+        "original_width": 417,
+        "original_height": 162,
+        "width": 417,
+        "height": 162
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/DIGITALTRIGGERSHOMEPAGE_03-3.png",
+      "size": 3521,
+      "encoded_size": 3521,
+      "total_transfer_size": 3521,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 548,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/link-whisper-premium/js/frontend.min.js?ver=1715956658",
+      "size": 4750,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 552,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-05-17 14:37:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "DIGITALTRIGGERSHOMEPAGE_09-1",
+        "title": "",
+        "original_width": 457,
+        "original_height": 103,
+        "width": 457,
+        "height": 103
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/DIGITALTRIGGERSHOMEPAGE_09-1.png",
+      "size": 3747,
+      "encoded_size": 3747,
+      "total_transfer_size": 3747,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 542,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "DIGITALTRIGGERSHOMEPAGE_15-2",
+        "title": "",
+        "original_width": 323,
+        "original_height": 67,
+        "width": 323,
+        "height": 67
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/DIGITALTRIGGERSHOMEPAGE_15-2.png",
+      "size": 2620,
+      "encoded_size": 2620,
+      "total_transfer_size": 2620,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 439,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002160.png",
+      "size": 767,
+      "encoded_size": 767,
+      "total_transfer_size": 767,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 646,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002161.png",
+      "size": 1043,
+      "encoded_size": 1043,
+      "total_transfer_size": 1043,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 133,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002162.png",
+      "size": 974,
+      "encoded_size": 974,
+      "total_transfer_size": 974,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 133,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002163.png",
+      "size": 856,
+      "encoded_size": 856,
+      "total_transfer_size": 856,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 134,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002164.png",
+      "size": 1083,
+      "encoded_size": 1083,
+      "total_transfer_size": 1083,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 134,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 88,
+        "original_height": 88,
+        "width": 88,
+        "height": 88
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002165.png",
+      "size": 856,
+      "encoded_size": 856,
+      "total_transfer_size": 856,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 139,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 772,
+        "original_height": 628,
+        "width": 772,
+        "height": 628
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Group-1000002202.png",
+      "size": 31495,
+      "encoded_size": 31495,
+      "total_transfer_size": 31495,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 138,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 573,
+        "original_height": 174,
+        "width": 573,
+        "height": 174
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Logo-191_58-White.png",
+      "size": 3027,
+      "encoded_size": 3027,
+      "total_transfer_size": 3027,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 648,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-04-03 21:21:22 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 573,
+        "original_height": 174,
+        "width": 573,
+        "height": 174
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/Logo-191_58.png",
+      "size": 3071,
+      "encoded_size": 3071,
+      "total_transfer_size": 3071,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 392,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-04-03 21:21:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "forbes",
+        "title": "",
+        "original_width": 152,
+        "original_height": 37,
+        "width": 152,
+        "height": 37
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/forbes.png",
+      "size": 1442,
+      "encoded_size": 1442,
+      "total_transfer_size": 1442,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 644,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:54 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 685,
+        "original_height": 580,
+        "width": 685,
+        "height": 580
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/image-3-1.png",
+      "size": 115611,
+      "encoded_size": 115611,
+      "total_transfer_size": 115611,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 439,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:54 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 1280,
+        "original_height": 720,
+        "width": 1280,
+        "height": 720
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2024/03/Featured-images-8.png",
+      "size": 27607,
+      "encoded_size": 27607,
+      "total_transfer_size": 27607,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 464,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-24 14:15:15 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 1280,
+        "original_height": 720,
+        "width": 1280,
+        "height": 720
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2024/06/Featured-images-1.png",
+      "size": 26621,
+      "encoded_size": 26621,
+      "total_transfer_size": 26621,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 354,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-06-22 07:29:23 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 1280,
+        "original_height": 720,
+        "width": 1280,
+        "height": 720
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2024/07/Featured-images-1.png",
+      "size": 83530,
+      "encoded_size": 83530,
+      "total_transfer_size": 83530,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 354,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-07-01 06:16:25 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "",
+        "title": "",
+        "original_width": 1280,
+        "original_height": 720,
+        "width": 1280,
+        "height": 720
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2024/08/Featured-images-.png",
+      "size": 40792,
+      "encoded_size": 40792,
+      "total_transfer_size": 40792,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 234,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-08-09 11:34:22 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "image",
+        "title": "",
+        "original_width": 600,
+        "original_height": 333,
+        "width": 0,
+        "height": 0
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://images.convertbox.com//users/1430/dde79173bd28ff398d9ababfdb389119",
+      "size": 13632,
+      "encoded_size": 13632,
+      "total_transfer_size": 13632,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 83, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 2592000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "BunnyCDN-DE1-1079",
+      "last_modified": {
+        "header": "2019-02-28 20:59:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://15551991.adoric-om.com/adoric.js",
+      "size": 216036,
+      "encoded_size": 57427,
+      "total_transfer_size": 57427,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 87, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 14400 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "gzip",
+      "media_type": "text/javascript",
+      "accept_type": "any",
+      "server": "cloudflare",
+      "last_modified": null
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdn.convertbox.com//convertbox/js/embed-core.js?id=7d8697148a72433d3d61",
+      "size": 532347,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": { "duration_time": 54, "fetch_start": 0, "fetch_end": 0 },
+      "cache_control": { "cachable": true, "ttl": 31919000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "BunnyCDN-DE1-1079",
+      "last_modified": {
+        "header": "2025-01-09 23:14:31 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdn.convertbox.com/convertbox/js/embed.js",
+      "size": 3139,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 143,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31919000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "BunnyCDN-DE1-1079",
+      "last_modified": {
+        "header": "2025-01-09 23:14:31 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js?ver=6.7.1",
+      "size": 143707,
+      "encoded_size": 34609,
+      "total_transfer_size": 34609,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 432,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 30672000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "cloudflare",
+      "last_modified": {
+        "header": "2022-11-21 15:34:22 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "image",
+      "meta": {
+        "alternative_text": "DIGITALTRIGGERSHOMEPAGE_06-2",
+        "title": "",
+        "original_width": 140,
+        "original_height": 137,
+        "width": 140,
+        "height": 137
+      },
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2023/02/DIGITALTRIGGERSHOMEPAGE_06-2.png",
+      "size": 2127,
+      "encoded_size": 2127,
+      "total_transfer_size": 2127,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 645,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": true,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "has_redirect": false,
+        "original_size_displayed": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "",
+      "media_type": "image/png",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2023-02-28 16:17:53 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://cdnjscloudnetwork.co/privacy/i18min.js",
+      "size": 229,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 777,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 86400 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "gzip",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx/1.18.0",
+      "last_modified": {
+        "header": "2024-05-10 19:50:06 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-popup/includes/elementor/assets/js/jet-popup-elementor-frontend.js?ver=2.0.3.1",
+      "size": 9078,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 578,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-07 18:01:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.2",
+      "size": 42908,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 574,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-popup/assets/js/lib/anime-js/anime.min.js?ver=2.0.2",
+      "size": 11233,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 553,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-07 18:01:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-popup/assets/js/jet-popup-frontend.js?ver=2.0.3.1",
+      "size": 33161,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 556,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": true,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-07 18:01:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-engine/assets/lib/slick/slick.min.js?ver=1.8.1",
+      "size": 43897,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 577,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:53:27 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-engine/assets/lib/jet-plugins/jet-plugins.js?ver=1.1.0",
+      "size": 6481,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 553,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:53:27 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-engine/assets/js/frontend.js?ver=3.4.1",
+      "size": 57882,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 641,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-19 22:53:27 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.3.0",
+      "size": 137541,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 578,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.3.0",
+      "size": 18660,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 580,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.3.0",
+      "size": 681,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 579,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.3.0",
+      "size": 40,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 570,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": true,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-10-25 00:31:12 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/jet-popup/assets/js/lib/waypoints/jquery.waypoints.min.js?ver=2.0.2",
+      "size": 9028,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 554,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-03-07 18:01:34 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.25.4",
+      "size": 15073,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 501,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/form.a8f0864f4b4fda696ad1.bundle.min.js",
+      "size": 19340,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 249,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.4",
+      "size": 5252,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 582,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/load-more.8b46f464e573feab5dd7.bundle.min.js",
+      "size": 5346,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 234,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": true
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/popup.f7b15b2ca565b152bf98.bundle.min.js",
+      "size": 752,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 134,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/posts.aec59265318492b89cb5.bundle.min.js",
+      "size": 3317,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 235,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.2",
+      "size": 24914,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 577,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.2",
+      "size": 6263,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 579,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:29:38 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    },
+    {
+      "resource_type": "script",
+      "meta": null,
+      "status_code": 200,
+      "location": "",
+      "url": "https://digitaltriggers.io/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js",
+      "size": 1360,
+      "encoded_size": 0,
+      "total_transfer_size": 0,
+      "fetch_time": "2025-02-05 01:35:36 +00:00",
+      "fetch_timing": {
+        "duration_time": 120,
+        "fetch_start": 0,
+        "fetch_end": 0
+      },
+      "cache_control": { "cachable": true, "ttl": 31536000 },
+      "checks": {
+        "no_content_encoding": false,
+        "high_loading_time": false,
+        "is_redirect": false,
+        "is_4xx_code": false,
+        "is_5xx_code": false,
+        "is_broken": false,
+        "is_www": false,
+        "is_https": true,
+        "is_http": false,
+        "is_minified": false,
+        "has_redirect": false,
+        "has_subrequests": false
+      },
+      "resource_errors": { "errors": null, "warnings": null },
+      "content_encoding": "br",
+      "media_type": "application/javascript",
+      "accept_type": "any",
+      "server": "nginx",
+      "last_modified": {
+        "header": "2024-11-12 13:28:59 +00:00",
+        "sitemap": null,
+        "meta_tag": null
+      }
+    }
+  ]
+}

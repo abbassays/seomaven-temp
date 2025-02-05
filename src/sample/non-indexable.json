@@ -1,0 +1,24 @@
+{
+  "crawl_progress": "finished",
+  "crawl_status": {
+    "max_crawl_pages": 5,
+    "pages_in_queue": 0,
+    "pages_crawled": 5
+  },
+  "total_items_count": 6,
+  "items_count": 6,
+  "items": [
+    { "reason": "meta_tag", "url": "https://digitaltriggers.io/blog/" },
+    { "reason": "meta_tag", "url": "https://digitaltriggers.io/coaching/" },
+    { "reason": "meta_tag", "url": "https://digitaltriggers.io/podcast/" },
+    { "reason": "meta_tag", "url": "https://digitaltriggers.io/reviews/" },
+    {
+      "reason": "meta_tag",
+      "url": "https://digitaltriggers.io/the-tools-that-built-us/"
+    },
+    {
+      "reason": "robots_txt",
+      "url": "https://digitaltriggers.io/wp-content/uploads/2020/05/video-seo-cheat-sheet.pdf"
+    }
+  ]
+}

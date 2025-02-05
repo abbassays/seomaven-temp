@@ -9,6 +9,7 @@ import {
   Tag,
   Copy,
   Layers,
+  FileWarningIcon,
 } from "lucide-react";
 import { SEOAuditReportData } from "@/types/dataforseo";
 import EmptyData from "../empty-data";
@@ -18,6 +19,7 @@ interface SEOAuditReportProps {
 }
 
 export function SEOAuditReport({ data }: SEOAuditReportProps) {
+  const { summary } = data;
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h1 className="text-3xl font-bold mb-8">SEO Audit Report</h1>
@@ -25,31 +27,35 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
       <Tabs defaultValue="overview" className="w-full">
         <TabsList className="grid grid-cols-4 lg:grid-cols-8 gap-2">
           <TabsTrigger value="overview" className="flex items-center gap-2">
-            <Search className="h-4 w-4" />
+            <Search className="h-4 w-4 shrink-0" />
             Overview
           </TabsTrigger>
+          <TabsTrigger value="seo-issues" className="flex items-center gap-2">
+            <FileWarningIcon className="h-4 w-4 shrink-0" />
+            SEO Issues
+          </TabsTrigger>
           <TabsTrigger value="pages" className="flex items-center gap-2">
-            <FileText className="h-4 w-4" />
+            <FileText className="h-4 w-4 shrink-0" />
             Pages
           </TabsTrigger>
           <TabsTrigger value="resources" className="flex items-center gap-2">
-            <Image className="h-4 w-4" />
+            <Image className="h-4 w-4 shrink-0" />
             Resources
           </TabsTrigger>
           <TabsTrigger value="links" className="flex items-center gap-2">
-            <Link2 className="h-4 w-4" />
+            <Link2 className="h-4 w-4 shrink-0" />
             Links
           </TabsTrigger>
           <TabsTrigger value="duplicates" className="flex items-center gap-2">
-            <Copy className="h-4 w-4" />
+            <Copy className="h-4 w-4 shrink-0" />
             Duplicates
           </TabsTrigger>
           <TabsTrigger value="indexing" className="flex items-center gap-2">
-            <Layers className="h-4 w-4" />
+            <Layers className="h-4 w-4 shrink-0" />
             Indexing
           </TabsTrigger>
           <TabsTrigger value="keywords" className="flex items-center gap-2">
-            <Tag className="h-4 w-4" />
+            <Tag className="h-4 w-4 shrink-0" />
             Keywords
           </TabsTrigger>
         </TabsList>
@@ -65,7 +71,7 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                   {data.summary?.crawl_progress}
                 </p>
                 <div className="flex items-center text-green-600">
-                  <Clock className="h-4 w-4" />
+                  <Clock className="h-4 w-4 shrink-0" />
                 </div>
               </div>
             </div>
@@ -79,7 +85,7 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                   {data.summary?.crawl_status?.pages_crawled}
                 </p>
                 <div className="flex items-center text-blue-600">
-                  <FileText className="h-4 w-4" />
+                  <FileText className="h-4 w-4 shrink-0" />
                 </div>
               </div>
             </div>
@@ -92,7 +98,7 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                     (data.summary?.page_metrics?.links_external ?? 0)}
                 </p>
                 <div className="flex items-center text-indigo-600">
-                  <Link2 className="h-4 w-4" />
+                  <Link2 className="h-4 w-4 shrink-0" />
                 </div>
               </div>
             </div>
@@ -109,7 +115,7 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                   )}
                 </p>
                 <div className="flex items-center text-red-600">
-                  <AlertTriangle className="h-4 w-4" />
+                  <AlertTriangle className="h-4 w-4 shrink-0" />
                 </div>
               </div>
             </div> */}
@@ -138,6 +144,57 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
               ))}
             </div>
           </div> */}
+        </TabsContent>
+
+        <TabsContent value="seo-issues" className="mt-6">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h3 className="mb-4 text-lg font-semibold">Duplicate Content</h3>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span>Titles</span>
+                  <span className="font-semibold">
+                    {summary.page_metrics?.duplicate_title}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Descriptions</span>
+                  <span className="font-semibold">
+                    {summary.page_metrics?.duplicate_description}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Content</span>
+                  <span className="font-semibold">
+                    {summary.page_metrics?.duplicate_content}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h3 className="mb-4 text-lg font-semibold">Issues Overview</h3>
+              <div className="space-y-3">
+                {summary.page_metrics?.checks &&
+                  Object.entries(summary.page_metrics.checks).map(
+                    ([check, stats]) => {
+                      if (!stats) return null;
+                      return (
+                        <div
+                          key={check}
+                          className="flex items-center justify-between gap-2"
+                        >
+                          <p className="capitalize">
+                            {check.replace(/_/g, " ")}
+                          </p>
+                          <p className="font-medium">{stats}</p>
+                        </div>
+                      );
+                    }
+                  )}
+              </div>
+            </div>
+          </div>
         </TabsContent>
 
         {/* Done */}
@@ -176,7 +233,11 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         {/* @ts-expect-error */}
-                        {page.page_timing.download_time}s
+                        {page.page_timing
+                          ? // @ts-expect-error
+                            (page.page_timing.download_time ?? 0)
+                          : 0}
+                        s
                       </td>
                     </tr>
                   );

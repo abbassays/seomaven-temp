@@ -45,7 +45,10 @@ export type OnPagePages = OnPagePagesResultInfo | undefined;
 export type OnPageResources = OnPageResourcesResultInfo | undefined;
 export type OnPageLinks = OnPageLinksResultInfo | undefined;
 export type OnPageNonIndexable = OnPageNonIndexableResultInfo | undefined;
-export type OnPageDuplicateTags = OnPageDuplicateTagsResultInfo | undefined;
+export type OnPageDuplicateTags = {
+  duplicateTitle: OnPageDuplicateTagsResultInfo | undefined;
+  duplicateDescription: OnPageDuplicateTagsResultInfo | undefined;
+};
 export type OnPageDuplicateContent =
   | OnPageDuplicateContentResultInfo
   | undefined;

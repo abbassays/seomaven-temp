@@ -1,96 +1,113 @@
-import { useState } from 'react';
-import { Search, FileSearch, Loader2, LogOut, Activity } from 'lucide-react';
-import { Button } from './components/ui/button';
-import { AdvancedOptionsSheet } from './components/advanced-options-sheet';
-import { OnPageParameters } from './types/dataforseo';
-import { dataForSEOApi } from './services/api';
-import { seoDataService } from './services/seoData';
-import { useTasksData } from './hooks/useTasksData';
-import { TasksTable } from './components/TasksTable';
-import { useAuth } from './contexts/AuthContext';
-import { AuthForm } from './components/auth/AuthForm';
-import { TaskMonitor } from './pages/TaskMonitor';
+import { useState } from "react";
+import { Search, FileSearch, Loader2, LogOut, Activity } from "lucide-react";
+import { Button } from "./components/ui/button";
+import { AdvancedOptionsSheet } from "./components/advanced-options-sheet";
+import { OnPageParameters } from "./types/dataforseo";
+import { dataForSEOApi } from "./services/api";
+import { seoDataService } from "./services/seoData";
+import { useTasksData } from "./hooks/useTasksData";
+import { TasksTable } from "./components/TasksTable";
+import { useAuth } from "./contexts/AuthContext";
+import { AuthForm } from "./components/auth/AuthForm";
+import { TaskMonitor } from "./pages/TaskMonitor";
+import { useTask } from "./contexts/TaskContext";
 
 export default function App() {
   const { user, loading: authLoading, signOut } = useAuth();
-  const [url, setUrl] = useState('');
+  const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [taskId, setTaskId] = useState<string | null>(null);
   const [showMonitor, setShowMonitor] = useState(false);
+  const { setAuditData } = useTask();
   const [parameters, setParameters] = useState<OnPageParameters>({
     store_raw_html: false,
     load_resources: true,
     enable_javascript: true,
     enable_browser_rendering: true,
     calculate_keyword_density: true,
-    max_pages: 100,
+    max_crawl_pages: 100,
   });
 
-  const { idList, isLoading: tasksLoading, error: tasksError, refetch } = useTasksData();
+  const {
+    idList,
+    isLoading: tasksLoading,
+    error: tasksError,
+    refetch,
+  } = useTasksData();
 
   const handleAnalyze = async () => {
     if (!url) {
-      setError('Please enter a URL');
+      setError("Please enter a URL");
       return;
     }
 
     if (!user) {
-      setError('Please sign in to analyze URLs');
+      setError("Please sign in to analyze URLs");
       return;
     }
 
     try {
+      console.log("setting audit data to null");
+      setAuditData(null);
       setIsLoading(true);
       setError(null);
       setSuccessMessage(null);
-      
+
       // Validate URL format
       let processedUrl: string;
       try {
-        const urlToProcess = url.startsWith('http') ? url : `https://${url}`;
+        const urlToProcess = url.startsWith("http") ? url : `https://${url}`;
         const urlObj = new URL(urlToProcess);
         processedUrl = urlObj.toString();
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (urlError) {
-        throw new Error('Please enter a valid URL');
+        throw new Error("Please enter a valid URL");
       }
-      
+
       // Create DataForSEO task
-      const response = await dataForSEOApi.createOnPageTask(processedUrl, parameters);
-      
+      const response = await dataForSEOApi.createOnPageTask(
+        processedUrl,
+        parameters
+      );
+
       if (!response?.result?.[0]?.task_id) {
-        throw new Error('Failed to create task: No task ID received');
+        throw new Error("Failed to create task: No task ID received");
       }
 
       const newTaskId = response.result[0].task_id;
-      
+
       // Store task and response in database
-      await seoDataService.createTask(newTaskId, processedUrl, user.id, response);
-      
+      await seoDataService.createTask(
+        newTaskId,
+        processedUrl,
+        user.id,
+        response
+      );
+
       setTaskId(newTaskId);
       setShowMonitor(true);
-      
+
       // Format cost to 4 decimal places
-      const cost = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
+      const cost = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
         minimumFractionDigits: 4,
-        maximumFractionDigits: 4
+        maximumFractionDigits: 4,
       }).format(response.cost);
 
       setSuccessMessage(
         `Analysis started successfully!\n` +
-        `Task ID: ${newTaskId}\n` +
-        `Cost: ${cost}`
+          `Task ID: ${newTaskId}\n` +
+          `Cost: ${cost}`
       );
-      
+
       await refetch(); // Refresh the task list
-      
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred';
-      console.error('Error in handleAnalyze:', errorMessage);
+      const errorMessage =
+        err instanceof Error ? err.message : "An unexpected error occurred";
+      console.error("Error in handleAnalyze:", errorMessage);
       setError(errorMessage);
       setTaskId(null);
     } finally {
@@ -101,9 +118,9 @@ export default function App() {
   const handleSignOut = async () => {
     try {
       await signOut();
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (e) {
-      setError('Failed to sign out');
+      setError("Failed to sign out");
     }
   };
 
@@ -122,8 +139,12 @@ export default function App() {
           <div className="mx-auto max-w-md">
             <div className="mb-8 text-center">
               <FileSearch className="mx-auto h-12 w-12 text-indigo-600" />
-              <h1 className="mt-4 text-3xl font-bold text-gray-900">SEO Maven AI</h1>
-              <p className="mt-2 text-gray-600">Sign in to analyze your websites</p>
+              <h1 className="mt-4 text-3xl font-bold text-gray-900">
+                SEO Maven AI
+              </h1>
+              <p className="mt-2 text-gray-600">
+                Sign in to analyze your websites
+              </p>
             </div>
             <AuthForm />
           </div>
@@ -146,7 +167,7 @@ export default function App() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setShowMonitor(false)}
-                className={showMonitor ? 'text-gray-600' : 'text-indigo-600'}
+                className={showMonitor ? "text-gray-600" : "text-indigo-600"}
               >
                 <Search className="mr-2 h-4 w-4" />
                 Analyze
@@ -155,7 +176,7 @@ export default function App() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setShowMonitor(true)}
-                className={!showMonitor ? 'text-gray-600' : 'text-indigo-600'}
+                className={!showMonitor ? "text-gray-600" : "text-indigo-600"}
               >
                 <Activity className="mr-2 h-4 w-4" />
                 Monitor
@@ -180,23 +201,22 @@ export default function App() {
           {showMonitor ? (
             <>
               <div className="mb-8 text-center">
-                <h2 className="text-4xl font-bold text-gray-900">Task Monitor</h2>
+                <h2 className="text-4xl font-bold text-gray-900">
+                  Task Monitor
+                </h2>
                 <p className="mt-2 text-lg text-gray-600">
                   Monitor your SEO analysis tasks in real-time
                 </p>
               </div>
-              {taskId && <TaskMonitor taskId={taskId} />}
+              <TaskMonitor taskId={taskId} />
               <TasksTable
                 title="Recent Tasks"
                 tasks={idList}
                 isLoading={tasksLoading}
                 error={tasksError}
                 type="id-list"
+                setShowMonitor={setShowMonitor}
                 onRefresh={refetch}
-                onViewReport={(id) => {
-                  setTaskId(id);
-                  setShowMonitor(true);
-                }}
               />
             </>
           ) : (
@@ -206,7 +226,8 @@ export default function App() {
                   Your Site Audit
                 </h2>
                 <p className="mb-8 text-lg text-gray-600">
-                  Enter your website URL to get detailed insights and recommendations
+                  Enter your website URL to get detailed insights and
+                  recommendations
                 </p>
 
                 <div className="flex space-x-2">
@@ -228,7 +249,7 @@ export default function App() {
                         Starting...
                       </span>
                     ) : (
-                      'Analyze'
+                      "Analyze"
                     )}
                   </Button>
                   <AdvancedOptionsSheet
@@ -257,10 +278,7 @@ export default function App() {
                 error={tasksError}
                 type="id-list"
                 onRefresh={refetch}
-                onViewReport={(id) => {
-                  setTaskId(id);
-                  setShowMonitor(true);
-                }}
+                setShowMonitor={setShowMonitor}
               />
             </>
           )}

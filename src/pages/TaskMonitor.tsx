@@ -1,14 +1,15 @@
-import { useTaskPolling } from "@/hooks/useTaskPolling";
-import { ResultsTabs } from "@/components/results/ResultsTabs";
-import { Loader2 } from "lucide-react";
 import { SEOAuditReport } from "@/components/reports/SEOAuditReport";
+import { useTask } from "@/contexts/TaskContext";
+import { useTaskPolling } from "@/hooks/useTaskPolling";
+import { Loader2 } from "lucide-react";
 
 interface TaskMonitorProps {
-  taskId: string;
+  taskId: string | null;
 }
 
 export function TaskMonitor({ taskId }: TaskMonitorProps) {
-  const { summary, isPolling, error, auditData } = useTaskPolling(taskId);
+  const { isPolling, error } = useTaskPolling(taskId);
+  const { auditData } = useTask();
 
   if (error) {
     return (
@@ -16,7 +17,7 @@ export function TaskMonitor({ taskId }: TaskMonitorProps) {
     );
   }
 
-  if (isPolling && !summary) {
+  if (isPolling && !auditData) {
     return (
       <div className="mt-8 text-center">
         <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-indigo-600 border-r-transparent align-[-0.125em]" />
@@ -30,14 +31,6 @@ export function TaskMonitor({ taskId }: TaskMonitorProps) {
     );
   }
 
-  if (summary || auditData) {
-    return (
-      <div className="flex flex-col gap-6">
-        {summary && <ResultsTabs summary={summary} />}
-        {auditData && <SEOAuditReport data={auditData} />}
-      </div>
-    );
-  }
   if (auditData) {
     return <SEOAuditReport data={auditData} />;
   }

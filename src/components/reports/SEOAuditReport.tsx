@@ -1,18 +1,20 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Search,
-  Link2,
-  FileText,
-  Image,
-  Clock,
-  Tag,
-  Copy,
-  Layers,
-  FileWarningIcon,
-} from "lucide-react";
 import { SEOAuditReportData } from "@/types/dataforseo";
+import {
+  Clock,
+  Copy,
+  FileText,
+  FileWarningIcon,
+  Image,
+  Layers,
+  Link2,
+  Search,
+  Tag,
+} from "lucide-react";
 import EmptyData from "../empty-data";
+import DuplicateContentTable from "./DuplicateContentTable";
+import DuplicateTagsTable from "./DuplicateTagsTable";
 
 interface SEOAuditReportProps {
   data: SEOAuditReportData;
@@ -20,6 +22,7 @@ interface SEOAuditReportProps {
 
 export function SEOAuditReport({ data }: SEOAuditReportProps) {
   const { summary } = data;
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h1 className="text-3xl font-bold mb-8">SEO Audit Report</h1>
@@ -361,85 +364,9 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
 
         <TabsContent value="duplicates" className="mt-6">
           <div className="space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Duplicate Tags</h3>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Type
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Value
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Count
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    {data.duplicateTags?.items?.map((item, index) => (
-                      <tr key={index}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          {item?.type}
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-900 max-w-md truncate">
-                          {item?.value}
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {item?.count}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                <EmptyData
-                  data={data.duplicateTags?.items}
-                  label="Duplicate Tags"
-                />
-              </div>
-            </div>
+            <DuplicateTagsTable data={data.duplicateTags} />
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Duplicate Content</h3>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        URL
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Similarity
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Duplicate URLs
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    {data?.duplicateContent?.items?.map((item, index) => (
-                      <tr key={index}>
-                        <td className="px-6 py-4 text-sm text-gray-900 max-w-md truncate">
-                          {item?.url}
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {item?.similarity_percent}%
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-900">
-                          {item?.duplicate_urls.length} URLs
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                <EmptyData
-                  data={data.duplicateContent?.items}
-                  label="Duplicate Content"
-                />
-              </div>
-            </div>
+            <DuplicateContentTable data={data.duplicateContent} />
           </div>
         </TabsContent>
 
@@ -508,9 +435,6 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Density
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Pages
-                      </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
@@ -520,13 +444,10 @@ export function SEOAuditReport({ data }: SEOAuditReportProps) {
                           {item?.keyword}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {item?.count}
+                          {item?.frequency}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {item?.density?.toFixed(2)}%
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {item?.urls.length}
+                          {item?.density?.toFixed(2)}
                         </td>
                       </tr>
                     ))}

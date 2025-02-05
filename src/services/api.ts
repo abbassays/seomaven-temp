@@ -3,7 +3,6 @@ import {
   OnPageDuplicateContentResponseInfo,
   OnPageDuplicateContentResultInfo,
   OnPageDuplicateTagsResponseInfo,
-  OnPageDuplicateTagsResultInfo,
   OnPageKeywordDensityResponseInfo,
   OnPageKeywordDensityResultInfo,
   OnPageLinksResponseInfo,
@@ -23,6 +22,7 @@ import {
 import { env } from "@/config/env";
 import { logData } from "@/lib/utils";
 import {
+  OnPageDuplicateTags,
   OnPageParameters,
   OnPageTaskResponse,
   TaskIdListItem,
@@ -54,14 +54,7 @@ class DataForSEOApi {
   ): Promise<OnPageTaskResponse> {
     try {
       // Use the test configuration
-      const post_array = [
-        {
-          target: url,
-          ...parameters,
-          max_crawl_pages: 5,
-        },
-      ];
-
+      const post_array = [{ target: url, ...parameters }];
       const response = await this.client.post("/on_page/task_post", post_array);
 
       console.log(
@@ -112,9 +105,7 @@ class DataForSEOApi {
 
   async getTasksReady(): Promise<TaskReadyItem[]> {
     try {
-      logData("getTasksReady");
       const response = await this.client.get("/on_page/tasks_ready");
-      // logData("getTasksReady response", response);
       if (!response.data?.tasks?.[0]?.result) {
         return [];
       }
@@ -154,7 +145,6 @@ class DataForSEOApi {
 
   async getOnPageSummary(taskId: string): Promise<OnPageSummaryResultInfo> {
     try {
-      // logData("getOnPageSummary", taskId);
       const response = await this.client.get<OnPageSummaryResponseInfo>(
         `/on_page/summary/${taskId}`
       );
@@ -174,7 +164,6 @@ class DataForSEOApi {
   async getOnPagePages(
     taskId: string
   ): Promise<OnPagePagesResultInfo | undefined> {
-    // logData("getOnPagePages", taskId);
     const response = await this.client.post<OnPagePagesResponseInfo>(
       `/on_page/pages`,
       {
@@ -188,7 +177,6 @@ class DataForSEOApi {
   async getOnPageResources(
     taskId: string
   ): Promise<OnPageResourcesResultInfo | undefined> {
-    // logData("getOnPageResources", taskId);
     const response = await this.client.post<OnPageResourcesResponseInfo>(
       `/on_page/resources`,
       {
@@ -202,7 +190,6 @@ class DataForSEOApi {
   async getOnPageLinks(
     taskId: string
   ): Promise<OnPageLinksResultInfo | undefined> {
-    // logData("getOnPageLinks", taskId);
     const response = await this.client.post<OnPageLinksResponseInfo>(
       `/on_page/links`,
       {
@@ -216,7 +203,6 @@ class DataForSEOApi {
   async getOnPageNonIndexable(
     taskId: string
   ): Promise<OnPageNonIndexableResultInfo | undefined> {
-    // logData("getOnPageNonIndexable", taskId);
     const response = await this.client.post<OnPageNonIndexableResponseInfo>(
       `/on_page/non_indexable`,
       {
@@ -227,60 +213,72 @@ class DataForSEOApi {
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
-  async getOnPageDuplicateTags(
-    taskId: string
-  ): Promise<OnPageDuplicateTagsResultInfo | undefined> {
-    // logData("getOnPageDuplicateTags", taskId);
+  async getOnPageDuplicateTags(taskId: string): Promise<OnPageDuplicateTags> {
     const response = await this.client.post<OnPageDuplicateTagsResponseInfo>(
       `/on_page/duplicate_tags`,
-      {
-        data: [{ id: taskId }],
-      }
+      [
+        { id: taskId, type: "duplicate_title" },
+        { id: taskId, type: "duplicate_description" },
+      ]
     );
-    // logData("getOnPageDuplicateTags response", response);
-    return response.data?.tasks?.[0]?.result?.[0];
+    logData("getOnPageDuplicateTags response", response.data);
+    logData("getOnPageDuplicateTags response", JSON.stringify(response.data));
+    const duplicateTitle = response.data?.tasks?.[0]?.result?.[0];
+    const duplicateDescription = response.data?.tasks?.[1]?.result?.[0];
+    return { duplicateTitle, duplicateDescription };
   }
 
   async getOnPageDuplicateContent(
-    taskId: string
+    taskId: string,
+    url: string
   ): Promise<OnPageDuplicateContentResultInfo | undefined> {
-    // logData("getOnPageDuplicateContent", taskId);
     const response = await this.client.post<OnPageDuplicateContentResponseInfo>(
       `/on_page/duplicate_content`,
-      {
-        data: [{ id: taskId }],
-      }
+      [{ id: taskId, url }]
     );
-    // logData("getOnPageDuplicateContent response", response);
+    logData("getOnPageDuplicateContent response", response.data);
+    logData(
+      "getOnPageDuplicateContent response",
+      JSON.stringify(response.data)
+    );
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
   async getOnPageKeywordDensity(
     taskId: string
   ): Promise<OnPageKeywordDensityResultInfo | undefined> {
-    // logData("getOnPageKeywordDensity", taskId);
     const response = await this.client.post<OnPageKeywordDensityResponseInfo>(
       `/on_page/keyword_density`,
-      {
-        data: [{ id: taskId }],
-      }
+      [{ id: taskId, keyword_length: 2 }]
     );
-    // logData("getOnPageKeywordDensity response", response);
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
   async getOnPageRedirectChains(
     taskId: string
   ): Promise<OnPageRedirectChainsResultInfo | undefined> {
-    // logData("getOnPageKeywordDensity", taskId);
     const response = await this.client.post<OnPageRedirectChainsResponseInfo>(
       `/on_page/redirect_chains`,
-      {
-        data: [{ id: taskId }],
-      }
+      [{ id: taskId }]
     );
-    // logData("getOnPageKeywordDensity response", response);
+    logData("getOnPageRedirectChains response", response.data);
+    logData("getOnPageRedirectChains response", JSON.stringify(response.data));
     return response.data?.tasks?.[0]?.result?.[0];
+  }
+
+  async getAllData(taskId: string, url: string) {
+    const res = await Promise.all([
+      this.getOnPageSummary(taskId),
+      this.getOnPagePages(taskId),
+      this.getOnPageResources(taskId),
+      this.getOnPageLinks(taskId),
+      this.getOnPageNonIndexable(taskId),
+      this.getOnPageDuplicateTags(taskId),
+      this.getOnPageDuplicateContent(taskId, url),
+      this.getOnPageKeywordDensity(taskId),
+      this.getOnPageRedirectChains(taskId),
+    ]);
+    return res;
   }
 }
 

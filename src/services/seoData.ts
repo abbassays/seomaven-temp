@@ -1,10 +1,15 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { supabase } from "./db";
-import { OnPageTaskResponse, SEOAuditReportData } from "@/types/dataforseo";
+import {
+  OnPageDuplicateTags,
+  OnPageTaskResponse,
+  SEOAuditReportData,
+} from "@/types/dataforseo";
 import { dataForSEOApi } from "./api";
 import { RealtimeChannel } from "@supabase/supabase-js";
 import {
+  OnPageDuplicateContentResultInfo,
   OnPageDuplicateTagsResultInfo,
   OnPageKeywordDensityResultInfo,
   OnPageLinksResultInfo,
@@ -14,6 +19,7 @@ import {
   OnPageSummaryResultInfo,
 } from "dataforseo-client";
 import {
+  InsertDuplicateContent,
   InsertDuplicateTags,
   InsertKeywordDensity,
   InsertLinks,
@@ -69,7 +75,6 @@ class SEODataService {
       console.error("Error fetching user tasks:", error);
       throw error;
     }
-    console.log("Success user tasks");
 
     return data.map((task) => ({
       ...task,
@@ -97,15 +102,17 @@ class SEODataService {
     status: "pending" | "processing" | "completed" | "failed"
   ) {
     console.log("Updating task status to", status);
-    const { error } = await supabase
+    const { error, data } = await supabase
       .from("seo_tasks")
       .update({ status })
-      .eq("task_id", taskId);
+      .eq("task_id", taskId)
+      .select();
 
     if (error) {
       console.error("Error updating task status:", error);
       throw error;
     }
+    return data;
   }
 
   async fetchAndStoreAllData(
@@ -115,7 +122,8 @@ class SEODataService {
     try {
       console.log("Starting to fetch and store all data");
       // Update task status to processing
-      await this.updateTaskStatus(taskId, "processing");
+      const task = await this.updateTaskStatus(taskId, "processing");
+      const url = task[0].target_url;
 
       // Fetch all data types
       const [
@@ -128,20 +136,9 @@ class SEODataService {
         duplicateContent,
         keywordDensity,
         redirectChains,
-      ] = await Promise.all([
-        dataForSEOApi.getOnPageSummary(taskId),
-        dataForSEOApi.getOnPagePages(taskId),
-        dataForSEOApi.getOnPageResources(taskId),
-        dataForSEOApi.getOnPageLinks(taskId),
-        dataForSEOApi.getOnPageNonIndexable(taskId),
-        dataForSEOApi.getOnPageDuplicateTags(taskId),
-        dataForSEOApi.getOnPageDuplicateContent(taskId),
-        dataForSEOApi.getOnPageKeywordDensity(taskId),
-        dataForSEOApi.getOnPageRedirectChains(taskId),
-      ]);
+      ] = await dataForSEOApi.getAllData(taskId, url);
 
       console.log("All data fetched");
-      console.log("sample duplicateContent", JSON.stringify(duplicateContent));
       console.log("sample redirectChains", JSON.stringify(redirectChains));
 
       // Store each data type in its respective table
@@ -152,7 +149,7 @@ class SEODataService {
         this.storeLinks(dbTaskId, links),
         this.storeNonIndexable(dbTaskId, nonIndexable),
         this.storeDuplicateTags(dbTaskId, duplicateTags),
-        // this.storeDuplicateContent(dbTaskId, duplicateContent),
+        this.storeDuplicateContent(dbTaskId, duplicateContent),
         this.storeKeywordDensity(dbTaskId, keywordDensity),
       ]);
 
@@ -254,7 +251,7 @@ class SEODataService {
         status_code: page.status_code,
         size: page.size,
         // @ts-expect-error
-        load_time: page.page_timing.download_time,
+        load_time: page.page_timing ? (page.page_timing.download_time ?? 0) : 0,
         content_encoding: page.content_encoding,
         media_type: page.media_type,
         // @ts-expect-error
@@ -354,20 +351,27 @@ class SEODataService {
 
   private async storeDuplicateTags(
     taskId: string,
-    items: OnPageDuplicateTagsResultInfo | undefined
+    { duplicateDescription, duplicateTitle }: OnPageDuplicateTags
   ) {
+    const types: OnPageDuplicateTagsResultInfo[] = [];
+    if (duplicateTitle) types.push(duplicateTitle);
+    if (duplicateDescription) types.push(duplicateDescription);
+
     const data: InsertDuplicateTags[] = [];
-    if (!items?.items) return;
-    for (const item of items.items) {
-      if (!item) continue;
-      data.push({
-        task_id: taskId,
-        accumulator: item.accumulator ?? "",
-        // @ts-expect-error
-        pages: item.pages?.filter(Boolean) ?? {},
-        total_count: item.count,
-        urls: item.urls,
-      });
+    if (!types) return;
+    for (const tagType of types) {
+      if (!tagType || !tagType.items) continue;
+      for (const item of tagType.items) {
+        if (!item) continue;
+        data.push({
+          task_id: taskId,
+          accumulator: item.accumulator ?? "",
+          // @ts-expect-error
+          pages: item.pages?.filter(Boolean) ?? {},
+          total_count: item.count,
+          urls: item.urls,
+        });
+      }
     }
 
     const { error } = await supabase.from("seo_duplicate_tags").insert(data);
@@ -379,26 +383,31 @@ class SEODataService {
     console.log("Success duplicate tags");
   }
 
-  // private async storeDuplicateContent(
-  //   taskId: string,
-  //   items: OnPageDuplicateContentResultInfo
-  // ) {
-  //   const data: InsertDuplicateContent[] = [];
-  //   if (!items?.items) return;
-  //   for (const item of items.items) {
-  //     if (!item?.pages) continue;
-  //     data.push({
-  //       task_id: taskId,
-  //       similarity_score: item.pages[0]?.similarity ?? 0,
-  //       source_meta: item.pages[0]?.page[0]?.
-  //     });
-  //   }
-  //   const { error } = await supabase
-  //     .from("seo_duplicate_content")
-  //     .insert(items.map((item) => ({ task_id: taskId, ...item })));
+  private async storeDuplicateContent(
+    taskId: string,
+    items: OnPageDuplicateContentResultInfo | undefined
+  ) {
+    if (!items?.items) return;
+    const data: InsertDuplicateContent[] = [];
+    const pages = items.items?.[0]?.pages;
+    if (!pages) return;
+    pages.forEach((page) => {
+      if (!page || !page.page?.[0]) return;
 
-  //   if (error) throw error;
-  // }
+      const firstPage = page.page[0];
+      data.push({
+        task_id: taskId,
+        cache_control: firstPage.cache_control,
+        similarity_score: page.similarity || 0,
+        url_from: "",
+        url_to: "",
+      });
+    });
+
+    const { error } = await supabase.from("seo_duplicate_content").insert(data);
+
+    if (error) throw error;
+  }
 
   private async storeKeywordDensity(
     taskId: string,

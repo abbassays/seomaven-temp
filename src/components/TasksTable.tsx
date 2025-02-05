@@ -1,6 +1,9 @@
 import { TaskIdListItem } from "@/types/dataforseo";
 import { RefreshCw, FileText, Loader2, DollarSign } from "lucide-react";
 import { Button } from "./ui/button";
+import { useTask } from "@/contexts/TaskContext";
+import { dataForSEOApi } from "@/services/api";
+import { useState } from "react";
 
 interface TasksTableProps {
   title: string;
@@ -9,7 +12,7 @@ interface TasksTableProps {
   error: string | null;
   type: "id-list" | "tasks-ready";
   onRefresh: () => void;
-  onViewReport?: (taskId: string) => void;
+  setShowMonitor: (show: boolean) => void;
 }
 
 export function TasksTable({
@@ -18,8 +21,38 @@ export function TasksTable({
   isLoading,
   error,
   onRefresh,
-  onViewReport,
+  setShowMonitor,
 }: TasksTableProps) {
+  const [loadingId, setLoadingId] = useState<string | null>(null);
+  const { setAuditData } = useTask();
+  const handleViewReport = async (task: TaskIdListItem) => {
+    setLoadingId(task.id);
+    const [
+      summary,
+      pages,
+      resources,
+      links,
+      nonIndexable,
+      duplicateTags,
+      duplicateContent,
+      keywordDensity,
+      // redirectChains,
+    ] = await dataForSEOApi.getAllData(task.id, task.url);
+    console.log("SETTING AUDIT DATA");
+    setAuditData({
+      summary,
+      pages,
+      resources,
+      links,
+      nonIndexable,
+      duplicateTags,
+      duplicateContent,
+      keywordDensity,
+    });
+    setShowMonitor(true);
+    setLoadingId(null);
+  };
+
   if (error) {
     return (
       <div className="mt-8 rounded-lg bg-red-50 p-4 text-red-600">{error}</div>
@@ -189,17 +222,19 @@ export function TasksTable({
                       : "N/A"}
                   </td>
                   <td className="whitespace-nowrap px-6 py-4 text-sm">
-                    {onViewReport && (
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => onViewReport(task.id)}
-                        className="flex items-center gap-2 text-indigo-600 hover:text-indigo-900"
-                      >
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => handleViewReport(task)}
+                      className="flex items-center gap-2 text-indigo-600 hover:text-indigo-900"
+                    >
+                      {loadingId === task.id ? (
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                      ) : (
                         <FileText className="h-4 w-4" />
-                        View Report
-                      </Button>
-                    )}
+                      )}
+                      View Report
+                    </Button>
                   </td>
                 </tr>
               ))}

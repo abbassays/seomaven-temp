@@ -209,15 +209,6 @@ export default function App() {
                 </p>
               </div>
               <TaskMonitor taskId={taskId} />
-              <TasksTable
-                title="Recent Tasks"
-                tasks={idList}
-                isLoading={tasksLoading}
-                error={tasksError}
-                type="id-list"
-                setShowMonitor={setShowMonitor}
-                onRefresh={refetch}
-              />
             </>
           ) : (
             <>
@@ -270,7 +261,6 @@ export default function App() {
                   </div>
                 )}
               </div>
-
               <TasksTable
                 title="Recent Tasks"
                 tasks={idList}

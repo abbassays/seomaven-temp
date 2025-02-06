@@ -17,18 +17,28 @@ export function TaskMonitor({ taskId }: TaskMonitorProps) {
     );
   }
 
-  if (isPolling && !auditData) {
-    return (
-      <div className="mt-8 text-center">
-        <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-indigo-600 border-r-transparent align-[-0.125em]" />
-        <p className="mt-4 text-gray-600">
-          <span className="flex items-center justify-center gap-2">
-            <Loader2 className="h-4 w-4 animate-spin" />
-            Analyzing your website...
-          </span>
-        </p>
-      </div>
-    );
+  if (!auditData) {
+    if (isPolling) {
+      return (
+        <div className="mt-8 text-center">
+          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-indigo-600 border-r-transparent align-[-0.125em]" />
+          <p className="mt-4 text-gray-600">
+            <span className="flex items-center justify-center gap-2">
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Analyzing your website...
+            </span>
+          </p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="mt-8 text-center">
+          <p className="mt-4 text-gray-600">
+            No audit data available. Please start an analysis to view results.
+          </p>
+        </div>
+      );
+    }
   }
 
   if (auditData) {

@@ -363,13 +363,12 @@ class SEODataService {
       if (!tagType || !tagType.items) continue;
       for (const item of tagType.items) {
         if (!item) continue;
+        const pages = item.pages?.filter(Boolean) ?? {};
         data.push({
           task_id: taskId,
           accumulator: item.accumulator ?? "",
-          // @ts-expect-error
-          pages: item.pages?.filter(Boolean) ?? {},
-          total_count: item.count,
-          urls: item.urls,
+          pages,
+          total_count: item.total_count ?? 0,
         });
       }
     }
@@ -406,7 +405,10 @@ class SEODataService {
 
     const { error } = await supabase.from("seo_duplicate_content").insert(data);
 
-    if (error) throw error;
+    if (error) {
+      console.error("Error storing duplicate content:", error);
+      throw error;
+    }
   }
 
   private async storeKeywordDensity(

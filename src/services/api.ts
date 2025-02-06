@@ -109,6 +109,7 @@ class DataForSEOApi {
       if (!response.data?.tasks?.[0]?.result) {
         return [];
       }
+      checkError(response.data.status_code, response.data.status_message);
 
       return response.data?.tasks?.[0]?.result;
     } catch (error) {
@@ -130,6 +131,7 @@ class DataForSEOApi {
           include_metadata: true,
         },
       ]);
+      checkError(response.data.status_code, response.data.status_message);
       // logData("getTaskIdList response", response);
 
       if (!response.data?.tasks?.[0]?.result) {
@@ -152,6 +154,7 @@ class DataForSEOApi {
       if (!response.data?.tasks?.[0]?.result?.[0]) {
         throw new Error("Invalid API response format or task not ready");
       }
+      checkError(response.data?.status_code, response.data?.status_message);
 
       return response.data?.tasks?.[0]?.result?.[0];
     } catch (error) {
@@ -171,6 +174,7 @@ class DataForSEOApi {
       }
     );
     // logData("getOnPagePages response", response);
+    checkError(response.data.status_code, response.data.status_message);
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
@@ -184,6 +188,7 @@ class DataForSEOApi {
       }
     );
     // logData("getOnPageResources response", response);
+    checkError(response.data.status_code, response.data.status_message);
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
@@ -197,6 +202,7 @@ class DataForSEOApi {
       }
     );
     // logData("getOnPageLinks response", response);
+    checkError(response.data.status_code, response.data.status_message);
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
@@ -210,6 +216,7 @@ class DataForSEOApi {
       }
     );
     // logData("getOnPageNonIndexable response", response);
+    checkError(response.data.status_code, response.data.status_message);
     return response.data?.tasks?.[0]?.result?.[0];
   }
 
@@ -221,6 +228,7 @@ class DataForSEOApi {
         { id: taskId, type: "duplicate_description" },
       ]
     );
+    checkError(response.data.status_code, response.data.status_message);
     logData("getOnPageDuplicateTags response", response.data);
     logData("getOnPageDuplicateTags response", JSON.stringify(response.data));
     const duplicateTitle = response.data?.tasks?.[0]?.result?.[0];
@@ -236,6 +244,7 @@ class DataForSEOApi {
       `/on_page/duplicate_content`,
       [{ id: taskId, url }]
     );
+    checkError(response.data.status_code, response.data.status_message);
     logData("getOnPageDuplicateContent response", response.data);
     logData(
       "getOnPageDuplicateContent response",
@@ -261,6 +270,7 @@ class DataForSEOApi {
       `/on_page/redirect_chains`,
       [{ id: taskId }]
     );
+    checkError(response.data.status_code, response.data.status_message);
     logData("getOnPageRedirectChains response", response.data);
     logData("getOnPageRedirectChains response", JSON.stringify(response.data));
     return response.data?.tasks?.[0]?.result?.[0];
@@ -284,3 +294,9 @@ class DataForSEOApi {
 
 // Create and export a singleton instance
 export const dataForSEOApi = new DataForSEOApi();
+
+function checkError(code?: number, message?: string) {
+  if (code && code >= 40000) {
+    throw new Error(message);
+  }
+}
